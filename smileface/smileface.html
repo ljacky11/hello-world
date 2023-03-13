@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cry to Smile Face</title>
+  </head>
+  <body>
+    <h1>Cry to Smile Face</h1>
+    <img id="face" src="cryface.png" alt="Cry Face" height="150" width="150">
+    <br>
+    <button onclick="changeFace()">Change Face</button>
+    <script>
+      var count = 0;
+      function changeFace() {
+        count++;
+        if (count == 10) {
+          var img = document.getElementById("face");
+          img.src = "smileface.png";
+          img.alt = "Smile Face";
+        }
+      }
+    </script>
+  </body>
+</html>
